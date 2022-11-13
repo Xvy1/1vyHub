@@ -1,0 +1,586 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local _1vyHub = Instance.new("ScreenGui")
+local Main1vy = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Main = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Buttons = Instance.new("Folder")
+local Combat = Instance.new("TextButton")
+local CombatIcon = Instance.new("ImageLabel")
+local Blantant = Instance.new("TextButton")
+local BlantantIcon = Instance.new("ImageLabel")
+local Visuals = Instance.new("TextButton")
+local VisualsIcon = Instance.new("ImageLabel")
+local Scripts = Instance.new("Folder")
+local Misc = Instance.new("Folder")
+local Title2 = Instance.new("ImageLabel")
+local Settings = Instance.new("ImageLabel")
+local Title1 = Instance.new("ImageLabel")
+local Frames = Instance.new("Folder")
+local CombatMenu = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Buttons_2 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Buttons_3 = Instance.new("Folder")
+local Reach = Instance.new("TextButton")
+local AutoClicker = Instance.new("TextButton")
+local AimAssist = Instance.new("TextButton")
+local Scripts_2 = Instance.new("Folder")
+local TextLabel = Instance.new("TextLabel")
+local CombatIcon_2 = Instance.new("ImageLabel")
+
+--Properties:
+
+_1vyHub.Name = "1vyHub"
+_1vyHub.Parent = game.CoreGui
+_1vyHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+_1vyHub.ResetOnSpawn = false
+
+Main1vy.Name = "Main1vy"
+Main1vy.Parent = _1vyHub
+Main1vy.Active = true
+Main1vy.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Main1vy.Position = UDim2.new(0.0134310145, 0, 0.0183968432, 0)
+Main1vy.Size = UDim2.new(0, 252, 0, 388)
+Main1vy.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Main1vy
+
+Main.Name = "Main"
+Main.Parent = Main1vy
+Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Main.Position = UDim2.new(-0.000915750861, 0, 0.139493614, 0)
+Main.Size = UDim2.new(0, 252, 0, 333)
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Main
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Main
+
+Combat.Name = "Combat"
+Combat.Parent = Buttons
+Combat.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Combat.BorderSizePixel = 0
+Combat.Position = UDim2.new(0.0039682542, 0, 0, 0)
+Combat.Size = UDim2.new(0, 251, 0, 44)
+Combat.Font = Enum.Font.Nunito
+Combat.Text = "       Combat                           >"
+Combat.TextColor3 = Color3.fromRGB(213, 213, 213)
+Combat.TextSize = 24.000
+Combat.TextWrapped = true
+Combat.TextXAlignment = Enum.TextXAlignment.Left
+
+CombatIcon.Name = "CombatIcon"
+CombatIcon.Parent = Combat
+CombatIcon.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
+CombatIcon.BackgroundTransparency = 1.000
+CombatIcon.Position = UDim2.new(0.0239043832, 0, 0.204545453, 0)
+CombatIcon.Size = UDim2.new(0, 22, 0, 25)
+CombatIcon.Image = "rbxassetid://11557392437"
+CombatIcon.ImageColor3 = Color3.fromRGB(220, 220, 220)
+
+Blantant.Name = "Blantant"
+Blantant.Parent = Buttons
+Blantant.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Blantant.BorderSizePixel = 0
+Blantant.Position = UDim2.new(0.0039682542, 0, 0.132132128, 0)
+Blantant.Size = UDim2.new(0, 251, 0, 44)
+Blantant.Font = Enum.Font.Nunito
+Blantant.Text = "       Blatant                            >"
+Blantant.TextColor3 = Color3.fromRGB(213, 213, 213)
+Blantant.TextSize = 24.000
+Blantant.TextWrapped = true
+Blantant.TextXAlignment = Enum.TextXAlignment.Left
+
+BlantantIcon.Name = "BlantantIcon"
+BlantantIcon.Parent = Blantant
+BlantantIcon.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
+BlantantIcon.BackgroundTransparency = 1.000
+BlantantIcon.Position = UDim2.new(0.0239043832, 0, 0.25, 0)
+BlantantIcon.Size = UDim2.new(0, 19, 0, 22)
+BlantantIcon.Image = "rbxassetid://11557425041"
+BlantantIcon.ImageColor3 = Color3.fromRGB(220, 220, 220)
+
+Visuals.Name = "Visuals"
+Visuals.Parent = Buttons
+Visuals.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Visuals.BorderSizePixel = 0
+Visuals.Position = UDim2.new(0.0039682542, 0, 0.264264256, 0)
+Visuals.Size = UDim2.new(0, 251, 0, 44)
+Visuals.Font = Enum.Font.Nunito
+Visuals.Text = "       Visuals                            >"
+Visuals.TextColor3 = Color3.fromRGB(213, 213, 213)
+Visuals.TextSize = 24.000
+Visuals.TextWrapped = true
+Visuals.TextXAlignment = Enum.TextXAlignment.Left
+
+VisualsIcon.Name = "VisualsIcon"
+VisualsIcon.Parent = Visuals
+VisualsIcon.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
+VisualsIcon.BackgroundTransparency = 1.000
+VisualsIcon.Position = UDim2.new(0.0239043832, 0, 0.204545453, 0)
+VisualsIcon.Size = UDim2.new(0, 22, 0, 25)
+VisualsIcon.Image = "rbxassetid://11557457242"
+VisualsIcon.ImageColor3 = Color3.fromRGB(220, 220, 220)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Main1vy
+
+Misc.Name = "Misc"
+Misc.Parent = Main1vy
+
+Title2.Name = "Title2"
+Title2.Parent = Misc
+Title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title2.BackgroundTransparency = 1.000
+Title2.Position = UDim2.new(0.242063507, 0, 0.0180412363, 0)
+Title2.Size = UDim2.new(0, 84, 0, 40)
+Title2.Image = "rbxassetid://11557059583"
+
+Settings.Name = "Settings"
+Settings.Parent = Misc
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0.888888955, 0, 0.0335051529, 0)
+Settings.Size = UDim2.new(0, 27, 0, 26)
+Settings.Image = "http://www.roblox.com/asset/?id=6031280882"
+
+Title1.Name = "Title1"
+Title1.Parent = Misc
+Title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title1.BackgroundTransparency = 1.000
+Title1.Position = UDim2.new(-0.0753968209, 0, 0, 0)
+Title1.Size = UDim2.new(0, 130, 0, 54)
+Title1.Image = "rbxassetid://11557046197"
+
+Frames.Name = "Frames"
+Frames.Parent = Main1vy
+
+CombatMenu.Name = "CombatMenu"
+CombatMenu.Parent = Frames
+CombatMenu.Active = true
+CombatMenu.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+CombatMenu.Position = UDim2.new(1.03327239, 0, 0.136953533, 0)
+CombatMenu.Size = UDim2.new(0, 252, 0, 216)
+CombatMenu.Visible = false
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = CombatMenu
+
+Buttons_2.Name = "Buttons"
+Buttons_2.Parent = CombatMenu
+Buttons_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Buttons_2.Position = UDim2.new(-0.000915769546, 0, 0.208266437, 0)
+Buttons_2.Size = UDim2.new(0, 252, 0, 170)
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Buttons_2
+
+Buttons_3.Name = "Buttons"
+Buttons_3.Parent = Buttons_2
+
+Reach.Name = "Reach"
+Reach.Parent = Buttons_3
+Reach.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Reach.BorderSizePixel = 0
+Reach.Position = UDim2.new(0.0039682542, 0, -0.00476950407, 0)
+Reach.Size = UDim2.new(0, 251, 0, 44)
+Reach.Font = Enum.Font.Nunito
+Reach.Text = "    Reach"
+Reach.TextColor3 = Color3.fromRGB(213, 213, 213)
+Reach.TextSize = 24.000
+Reach.TextWrapped = true
+Reach.TextXAlignment = Enum.TextXAlignment.Left
+
+AutoClicker.Name = "AutoClicker"
+AutoClicker.Parent = Buttons_3
+AutoClicker.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+AutoClicker.BorderSizePixel = 0
+AutoClicker.Position = UDim2.new(0, 0, 0.250733048, 0)
+AutoClicker.Size = UDim2.new(0, 251, 0, 44)
+AutoClicker.Font = Enum.Font.Nunito
+AutoClicker.Text = "    AutoClicker"
+AutoClicker.TextColor3 = Color3.fromRGB(213, 213, 213)
+AutoClicker.TextSize = 24.000
+AutoClicker.TextWrapped = true
+AutoClicker.TextXAlignment = Enum.TextXAlignment.Left
+
+AimAssist.Name = "AimAssist"
+AimAssist.Parent = Buttons_3
+AimAssist.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+AimAssist.BorderSizePixel = 0
+AimAssist.Position = UDim2.new(0, 0, 0.51352483, 0)
+AimAssist.Size = UDim2.new(0, 251, 0, 44)
+AimAssist.Font = Enum.Font.Nunito
+AimAssist.Text = "    AimAssist"
+AimAssist.TextColor3 = Color3.fromRGB(213, 213, 213)
+AimAssist.TextSize = 24.000
+AimAssist.TextWrapped = true
+AimAssist.TextXAlignment = Enum.TextXAlignment.Left
+
+Scripts_2.Name = "Scripts"
+Scripts_2.Parent = CombatMenu
+
+TextLabel.Parent = CombatMenu
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.138888896, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 44)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Combat"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 26.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+CombatIcon_2.Name = "CombatIcon"
+CombatIcon_2.Parent = CombatMenu
+CombatIcon_2.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
+CombatIcon_2.BackgroundTransparency = 1.000
+CombatIcon_2.Position = UDim2.new(0.0350000001, 0, 0.0320000015, 0)
+CombatIcon_2.Size = UDim2.new(0, 22, 0, 24)
+CombatIcon_2.Image = "rbxassetid://11557392437"
+CombatIcon_2.ImageColor3 = Color3.fromRGB(220, 220, 220)
+
+-- Scripts:
+
+local function AKOKCYV_fake_script() -- Combat.LocalScript 
+	local script = Instance.new('LocalScript', Combat)
+
+	--
+	
+	
+	local CombatButton = script.Parent.Parent.Combat
+	local CombatIcon = script.Parent.CombatIcon
+	
+	
+	--
+	local Open = false
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	local Mouse = Player:GetMouse()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if (Open == false) then
+	
+	
+			CombatButton.TextColor3 = Color3.new(0.317647, 0.211765, 0.776471)
+			CombatIcon.ImageColor3 = Color3.new(0.317647, 0.211765, 0.776471)
+			CombatButton.Text = "       Combat                           <"
+	        script.Parent.Parent.Parent.Parent.Frames.CombatMenu.Visible = true
+			Open = true
+		elseif (Open == true) then
+	
+	
+			Open = false
+			CombatButton.TextColor3 = Color3.new(0.835294, 0.835294, 0.835294)
+			CombatIcon.ImageColor3 = Color3.new(0.862745, 0.862745, 0.862745)
+			CombatButton.Text = "       Combat                           >"
+			script.Parent.Parent.Parent.Parent.Frames.CombatMenu.Visible = false
+	
+	
+		end
+	end)
+	
+	local Button = script.Parent
+	
+	function MouseEnter()
+		Button.Hover.Playing = true
+	end
+	
+	function MouseLeave()
+		Button.Hover.Playing = false
+	end
+	
+	function MouseClick()
+		Button.Click.Playing = true
+	end
+	
+	Button.MouseEnter:connect(MouseEnter)
+	Button.MouseLeave:connect(MouseLeave)
+	Button.MouseButton1Click:Connect(MouseClick)
+end
+coroutine.wrap(AKOKCYV_fake_script)()
+local function NPHKEO_fake_script() -- Blantant.LocalScript 
+	local script = Instance.new('LocalScript', Blantant)
+
+	--
+	
+	
+	local BlantButton = script.Parent.Parent.Blantant
+	local BlantIcon = script.Parent.Parent.Blantant.BlantantIcon
+	
+	
+	--
+	local Open = false
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	local Mouse = Player:GetMouse()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if (Open == false) then
+	
+	
+			BlantButton.TextColor3 = Color3.new(0.317647, 0.211765, 0.776471)
+			BlantIcon.ImageColor3 = Color3.new(0.317647, 0.211765, 0.776471)
+			BlantButton.Text = "       Blatant                            <"
+	
+			Open = true
+		elseif (Open == true) then
+	
+	
+			Open = false
+			BlantButton.TextColor3 = Color3.new(0.835294, 0.835294, 0.835294)
+			BlantIcon.ImageColor3 = Color3.new(0.862745, 0.862745, 0.862745)
+			BlantButton.Text = "       Blatant                            >"
+	
+	
+		end
+	end)
+	
+	local Button = script.Parent
+	
+	function MouseEnter()
+		Button.Hover.Playing = true
+	end
+	
+	function MouseLeave()
+		Button.Hover.Playing = false
+	end
+	
+	function MouseClick()
+		Button.Click.Playing = true
+	end
+	
+	Button.MouseEnter:connect(MouseEnter)
+	Button.MouseLeave:connect(MouseLeave)
+	Button.MouseButton1Click:Connect(MouseClick)
+end
+coroutine.wrap(NPHKEO_fake_script)()
+local function RQXUIR_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	--
+	
+	
+	local VisualsButton = script.Parent.Parent.Visuals
+	local VisualsIcon = script.Parent.Parent.Visuals.VisualsIcon
+	
+	
+	--
+	local Open = false
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	local Mouse = Player:GetMouse()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if (Open == false) then
+	
+	
+			VisualsButton.TextColor3 = Color3.new(0.317647, 0.211765, 0.776471)
+			VisualsIcon.ImageColor3 = Color3.new(0.317647, 0.211765, 0.776471)
+			VisualsButton.Text = "       Visuals                            <"
+	
+			Open = true
+		elseif (Open == true) then
+	
+	
+			Open = false
+			VisualsButton.TextColor3 = Color3.new(0.835294, 0.835294, 0.835294)
+			VisualsIcon.ImageColor3 = Color3.new(0.862745, 0.862745, 0.862745)
+			VisualsButton.Text = "       Visuals                            <"
+	
+	
+		end
+	end)
+	
+	local Button = script.Parent
+	
+	function MouseEnter()
+		Button.Hover.Playing = true
+	end
+	
+	function MouseLeave()
+		Button.Hover.Playing = false
+	end
+	
+	function MouseClick()
+		Button.Click.Playing = true
+	end
+	
+	Button.MouseEnter:connect(MouseEnter)
+	Button.MouseLeave:connect(MouseLeave)
+	Button.MouseButton1Click:Connect(MouseClick)
+end
+coroutine.wrap(RQXUIR_fake_script)()
+local function JSYJ_fake_script() -- Scripts.SmoothDrag 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent.Parent.Parent.Main1vy
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(JSYJ_fake_script)()
+local function JZLUM_fake_script() -- Scripts.KeyToOpen 
+	local script = Instance.new('LocalScript', Scripts)
+
+	wait()
+	
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	local Mouse = Player:GetMouse()
+	local Gui = script.Parent.Parent.Parent.Main1vy
+	local Open = false
+	
+	
+	
+	local blur = Instance.new("BlurEffect")
+	blur.Name = "1vyBlur"
+	blur.Enabled = false
+	blur.Size = 15
+	blur.Parent = game.Lighting
+	
+	
+	
+	function PressV(key) 
+		if (key == "v") then 
+			if (Open == false) then
+				Gui.Visible = true
+				
+				blur.Enabled = true
+				print("Opened")
+				
+				Open = true
+			elseif (Open == true) then
+				Gui.Visible = false
+				Open = false
+				
+				print("Closed")
+				blur.Enabled = false
+				
+			end
+		end
+	end
+		
+	Mouse.KeyDown:Connect(PressV) 
+end
+coroutine.wrap(JZLUM_fake_script)()
+-- Misc.Colors is disabled.
+local function VZDXUN_fake_script() -- Scripts_2.SmoothDrag 
+	local script = Instance.new('LocalScript', Scripts_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent.Parent.Parent.CombatMenu
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(VZDXUN_fake_script)()
